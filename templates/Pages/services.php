@@ -89,7 +89,7 @@ $this->assign('title', 'Our Services');
                 <div class="col-md-6 col-xl-4">
                     <div class="service-card">
                         <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
-                        <h3>Passport & PCC</h3>
+                        <h3>Passport Application Services</h3>
                         <ul>
                             <li>Indian passport applications</li>
                             <li>Police clearance certificates</li>
@@ -111,7 +111,7 @@ $this->assign('title', 'Our Services');
                 <div class="col-md-6 col-xl-4">
                     <div class="service-card">
                         <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
-                        <h3>OCI & Renewals</h3>
+                        <h3>Services for Foreign Nationals</h3>
                         <ul>
                             <li>Passport renewals</li>
                             <li>India visa applications</li>
