@@ -350,8 +350,8 @@ $this->assign('title', 'Sky Travel & Visa Services');
                     <div class="contact-box">
                         <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                         <h4>Email</h4>
-                        <p>info@skyedgetravels.com</p>
-                        <p>support@skyedgetravels.com</p>
+                        <p>visa@skyedgetravels.com</p>
+                        <p>tickets@skyedgetravels.com</p>
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
                 <ul class="list-unstyled">
                     <li><a href="tel:+919409970033">+91 940 997 0033</a></li>
                     <li><a href="tel:+919227100680">+91 922 710 0680</a></li>
-                    <li><a href="mailto:info@skyedgetravels.com">info@skyedgetravels.com</a></li>
+                    <li><a href="mailto:visa@skyedgetravels.com">visa@skyedgetravels.com</a></li>
                 </ul>
             </div>
         </div>

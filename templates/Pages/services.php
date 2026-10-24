@@ -167,7 +167,7 @@ $this->assign('title', 'Our Services');
                 <ul class="list-unstyled">
                     <li><a href="tel:+919409970033">+91 940 997 0033</a></li>
                     <li><a href="tel:+919227100680">+91 922 710 0680</a></li>
-                    <li><a href="mailto:info@skyedgetravels.com">info@skyedgetravels.com</a></li>
+                    <li><a href="mailto:visa@skyedgetravels.com">visa@skyedgetravels.com</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">

@@ -61,8 +61,8 @@ $this->assign('title', 'Contact Us');
                     <div class="contact-box">
                         <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                         <h4>Email</h4>
-                        <p><a href="mailto:info@skyedgetravels.com">info@skyedgetravels.com</a></p>
-                        <p><a href="mailto:support@skyedgetravels.com">support@skyedgetravels.com</a></p>
+                        <p><a href="mailto:visa@skyedgetravels.com">visa@skyedgetravels.com</a></p>
+                        <p><a href="mailto:tickets@skyedgetravels.com">tickets@skyedgetravels.com</a></p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ $this->assign('title', 'Contact Us');
                     <div class="info-card p-4 p-lg-5">
                         <h2 class="section-title text-center">Request a consultation</h2>
                         <p class="text-center mb-4">Tell us about your travel, visa, or immigration requirement, and our team will guide you to the best next step.</p>
-                        <form action="mailto:info@skyedgetravels.com" method="post" enctype="text/plain">
+                        <form action="mailto:visa@skyedgetravels.com" method="post" enctype="text/plain">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Full Name</label>
@@ -127,7 +127,7 @@ $this->assign('title', 'Contact Us');
                 <ul class="list-unstyled">
                     <li><a href="tel:+919409970033">+91 940 997 0033</a></li>
                     <li><a href="tel:+919227100680">+91 922 710 0680</a></li>
-                    <li><a href="mailto:info@skyedgetravels.com">info@skyedgetravels.com</a></li>
+                    <li><a href="mailto:visa@skyedgetravels.com">visa@skyedgetravels.com</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
