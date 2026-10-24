@@ -78,7 +78,7 @@ $this->assign('title', 'Our Services');
                 <div class="col-md-6 col-xl-4">
                     <div class="service-card">
                         <div class="icon-box"><i class="fa-solid fa-flag"></i></div>
-                        <h3>Canada Visa Services</h3>
+                        <h3>Canada Immigration</h3>
                         <ul>
                             <li>Spouse visa support</li>
                             <li>Permanent residence guidance</li>
