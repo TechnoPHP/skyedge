@@ -176,8 +176,11 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="col-sm-6">
                             <div class="feature-card h-100">
                                 <div class="feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
-                                <h3>OCI & Visa Renewals</h3>
-                                <p>Assistance for foreign citizens seeking passport renewals, India visa applications, and extensions.</p>
+                                <h3>Services for Foreign Nationals</h3>
+                                <p>India Visa application, Renewal, Extension and Conversion support</p>
+                                <p>Overseas Citizenship application assistance</p>
+                                <p>Passport renewals</p>
+                                <p>Registration of Birth for children of foreign citizens born in India</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
