@@ -95,9 +95,8 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="icon-box"><i class="fa-solid fa-plane"></i></div>
                         <h3>Flight Bookings</h3>
                         <ul>
-                            <li>International flights</li>
-                            <li>Domestic air tickets</li>
-                            <li>Best fare guidance</li>
+                            <li>Domestic & International Flight Bookings</li>
+                            <li>Expert Guidance for best connections and lowest fares</li>
                         </ul>
                     </div>
                 </div>
@@ -106,9 +105,9 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="icon-box"><i class="fa-solid fa-passport"></i></div>
                         <h3>Visitor Visa Support</h3>
                         <ul>
-                            <li>Tourist and business visas</li>
-                            <li>Multiple country applications</li>
-                            <li>Document review and filing</li>
+                            <li>Tourist & Business Visa application processing for all countries</li>
+                            <li>Professional Filing Assistance</li>
+                            <li>Expert Guidance and counselling for interviews</li>
                         </ul>
                     </div>
                 </div>
@@ -117,9 +116,11 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="icon-box"><i class="fa-solid fa-house-heart"></i></div>
                         <h3>USA Immigration</h3>
                         <ul>
-                            <li>Family immigration filing</li>
-                            <li>Application preparation</li>
-                            <li>Expert case guidance</li>
+                            <li>Processing for Family Immigration Categories - F1, F2A, F2B, F3, F4 & IR</li>
+                            <li>Petition Filing assistance</li>
+                            <li>Filing and Documentation after file opening</li>
+                            <li>Assistance for preparation of Sponsor's documentation</li>
+                            <li>Expert Guidance and counselling for interviews</li>
                         </ul>
                     </div>
                 </div>
@@ -128,9 +129,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="icon-box"><i class="fa-solid fa-flag"></i></div>
                         <h3>Canada Immigration</h3>
                         <ul>
-                            <li>Spouse visa support</li>
-                            <li>Permanent residence assistance</li>
-                            <li>Citizen and PR cases</li>
+                            <li>Application filing and documentation for Spouse visas of Canadian Citizens and Permanent Residents</li>
                         </ul>
                     </div>
                 </div>
@@ -139,9 +138,8 @@ $this->assign('title', 'Sky Travel & Visa Services');
                         <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
                         <h3>Passport Application Services</h3>
                         <ul>
-                            <li>Indian passport applications</li>
-                            <li>Police clearance certificates</li>
-                            <li>Fast document support</li>
+                            <li>Indian Passport - New & Renewal application assistance</li>
+                            <li>Police Clearance Certificate application assistance</li>
                         </ul>
                     </div>
                 </div>
