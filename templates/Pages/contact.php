@@ -1,6 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
+ * @var \App\Form\ContactForm|null $contact
  */
 $this->assign('title', 'Contact Us');
 ?>
@@ -73,32 +74,41 @@ $this->assign('title', 'Contact Us');
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="info-card p-4 p-lg-5">
+                    <div class="info-card p-4 p-lg-5" id="enquiry">
                         <h2 class="section-title text-center">Request a consultation</h2>
                         <p class="text-center mb-4">Tell us about your travel, visa, or immigration requirement, and our team will guide you to the best next step.</p>
-                        <form action="mailto:visa@skyedgetravels.com" method="post" enctype="text/plain">
+                        <?= $this->Flash->render() ?>
+                        <?= $this->Form->create($contact ?? null, ['url' => '/contact#enquiry']) ?>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" name="name" placeholder="Your name">
+                                    <label class="form-label" for="name">Full Name</label>
+                                    <?= $this->Form->text('name', ['id' => 'name', 'class' => 'form-control', 'placeholder' => 'Your name', 'required' => true, 'maxlength' => 100]) ?>
+                                    <?= $this->Form->error('name') ?>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="text" class="form-control" name="phone" placeholder="Your contact number">
+                                    <label class="form-label" for="phone">Phone Number</label>
+                                    <?= $this->Form->tel('phone', ['id' => 'phone', 'class' => 'form-control', 'placeholder' => 'Your contact number', 'maxlength' => 30]) ?>
+                                    <?= $this->Form->error('phone') ?>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" name="email" placeholder="Your email address">
+                                    <label class="form-label" for="email">Email</label>
+                                    <?= $this->Form->email('email', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'Your email address', 'required' => true]) ?>
+                                    <?= $this->Form->error('email') ?>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label">Your Requirement</label>
-                                    <textarea class="form-control" name="message" rows="5" placeholder="Tell us what service you need"></textarea>
+                                    <label class="form-label" for="message">Your Requirement</label>
+                                    <?= $this->Form->textarea('message', ['id' => 'message', 'class' => 'form-control', 'rows' => 5, 'placeholder' => 'Tell us what service you need', 'required' => true, 'maxlength' => 5000]) ?>
+                                    <?= $this->Form->error('message') ?>
+                                </div>
+                                <div class="contact-website" aria-hidden="true">
+                                    <label for="website">Leave this field empty</label>
+                                    <?= $this->Form->text('website', ['id' => 'website', 'tabindex' => '-1', 'autocomplete' => 'off']) ?>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <button type="submit" class="btn btn-primary">Send Enquiry</button>
                                 </div>
                             </div>
-                        </form>
+                        <?= $this->Form->end() ?>
                     </div>
                 </div>
             </div>

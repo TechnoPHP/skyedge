@@ -53,7 +53,7 @@ return function (RouteBuilder $routes): void {
         $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
         $builder->connect('/about', ['controller' => 'Pages', 'action' => 'display', 'about']);
         $builder->connect('/services', ['controller' => 'Pages', 'action' => 'display', 'services']);
-        $builder->connect('/contact', ['controller' => 'Pages', 'action' => 'display', 'contact']);
+        $builder->connect('/contact', ['controller' => 'Contact', 'action' => 'index']);
         $builder->connect('/pages/*', 'Pages::display');
 
         /*

@@ -252,13 +252,20 @@ return [
     'Email' => [
         'default' => [
             'transport' => 'default',
-            'from' => 'you@localhost',
+            'from' => ['visa@skyedgetravels.com' => 'Skyedge Travels'],
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
+    ],
+
+    /*
+     * Contact form: enquiries are emailed to this address and not stored.
+     */
+    'Contact' => [
+        'to' => 'visa@skyedgetravels.com',
     ],
 
     /*

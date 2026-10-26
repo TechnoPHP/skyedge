@@ -83,14 +83,21 @@ return [
      * Host and credential configuration in case you are using SmtpTransport
      *
      * See app.php for more configuration options.
+     *
+     * SendGrid SMTP: username is the literal string 'apikey' and password is
+     * the SendGrid API key. The "from" address set in app.php
+     * (Email.default.from) must be a verified sender in SendGrid.
      */
     'EmailTransport' => [
         'default' => [
-            'host' => 'localhost',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
+            'className' => \Cake\Mailer\Transport\SmtpTransport::class,
+            'host' => 'smtp.sendgrid.net',
+            'port' => 587,
+            'timeout' => 30,
+            'username' => 'apikey',
+            'password' => '', // SendGrid API key
             'client' => null,
+            'tls' => true,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
