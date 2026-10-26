@@ -102,9 +102,9 @@ $this->assign('title', 'Our Services');
                         <div class="icon-box"><i class="fa-solid fa-suitcase-rolling"></i></div>
                         <h3>Travel Packages</h3>
                         <ul>
-                            <li>Domestic holiday packages</li>
-                            <li>International FIT and custom tours</li>
-                            <li>Personalized trip planning</li>
+                            <li>Customised Tour packages for Domestic & International Destinations</li>
+                            <li>Itinerary Planning & Guidance</li>
+                            <li>Professional support</li>
                         </ul>
                     </div>
                 </div>
