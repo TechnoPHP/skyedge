@@ -60,7 +60,7 @@ class ContactForm extends Form
         $phone = trim((string)($data['phone'] ?? ''));
 
         $body = implode("\n", [
-            'New enquiry from the Skyedge Travels contact form',
+            'New enquiry from the Sky Edge Travels contact form',
             '',
             'Name:    ' . $name,
             'Email:   ' . $data['email'],

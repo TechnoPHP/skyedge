@@ -252,7 +252,7 @@ return [
     'Email' => [
         'default' => [
             'transport' => 'default',
-            'from' => ['visa@skyedgetravels.com' => 'Skyedge Travels'],
+            'from' => ['visa@skyedgetravels.com' => 'Sky Edge Travels'],
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */

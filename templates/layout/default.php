@@ -3,7 +3,7 @@
  * @var \App\View\AppView $this
  */
 
-$this->assign('title', 'Sky Travel & Visa Services');
+$this->assign('title', 'Sky Edge Travel & Visa Services');
 ?>
 <!DOCTYPE html>
 <html lang="en">

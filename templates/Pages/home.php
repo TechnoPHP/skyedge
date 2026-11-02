@@ -8,8 +8,8 @@ $this->assign('title', 'Sky Travel & Visa Services');
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-            <img src="<?= $this->Url->image('SkyEdge-Logo.png') ?>" alt="Skyedge Travels logo" class="brand-logo">
-            <span class="brand-text"><span>Skyedge</span> Travels</span>
+            <img src="<?= $this->Url->image('SkyEdge-Logo.png') ?>" alt="Sky Edge Travels logo" class="brand-logo">
+            <span class="brand-text"><span>Sky Edge</span> Travels</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -335,7 +335,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
                     <div class="contact-box">
                         <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                         <h4>Office</h4>
-                        <p>Skyedge Travels</p>
+                        <p>Sky Edge Travels</p>
                         <p># 108 Samanvay Saptrshi, Old More megastore campus, Nr. Monalisa, Manjalpur, Vadodara, Gujarat, India - 390011</p>
                     </div>
                 </div>
@@ -364,7 +364,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
-                <h5>Skyedge Travels</h5>
+                <h5>Sky Edge Travels</h5>
                 <p>Professional travel, visa, immigration, passport, and holiday package services for individuals and families.</p>
             </div>
             <div class="col-lg-2">
@@ -394,7 +394,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>© <span id="year"></span> Skyedge Travels. All rights reserved.</p>
+            <p>© <span id="year"></span> Sky Edge Travels. All rights reserved.</p>
         </div>
     </div>
 </footer>
