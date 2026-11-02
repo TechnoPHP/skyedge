@@ -101,4 +101,13 @@ return [
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
+
+    /*
+     * Google reCAPTCHA v3 keys for the contact form
+     * (https://www.google.com/recaptcha/admin).
+     */
+    'Recaptcha' => [
+        'siteKey' => '',
+        'secretKey' => '',
+    ],
 ];

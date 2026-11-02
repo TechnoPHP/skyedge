@@ -3,7 +3,36 @@
  * @var \App\View\AppView $this
  * @var \App\Form\ContactForm|null $contact
  */
+use App\Service\Recaptcha;
+use Cake\Core\Configure;
+
 $this->assign('title', 'Contact Us');
+
+if (Recaptcha::isEnabled()) {
+    $recaptchaSiteKey = Configure::read('Recaptcha.siteKey');
+    $this->Html->script('https://www.google.com/recaptcha/api.js?render=' . rawurlencode($recaptchaSiteKey), ['block' => true]);
+    $this->Html->scriptBlock(sprintf(<<<'JS'
+(function () {
+    var form = document.getElementById('contact-form');
+    if (!form) {
+        return;
+    }
+    form.addEventListener('submit', function (event) {
+        if (form.dataset.recaptchaDone || typeof grecaptcha === 'undefined') {
+            return;
+        }
+        event.preventDefault();
+        grecaptcha.ready(function () {
+            grecaptcha.execute(%s, {action: 'contact'}).then(function (token) {
+                form.querySelector('[name="g-recaptcha-response"]').value = token;
+                form.dataset.recaptchaDone = '1';
+                form.submit();
+            });
+        });
+    });
+})();
+JS, json_encode($recaptchaSiteKey)), ['block' => true]);
+}
 ?>
 
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -78,7 +107,8 @@ $this->assign('title', 'Contact Us');
                         <h2 class="section-title text-center">Request a consultation</h2>
                         <p class="text-center mb-4">Tell us about your travel, visa, or immigration requirement, and our team will guide you to the best next step.</p>
                         <?= $this->Flash->render() ?>
-                        <?= $this->Form->create($contact ?? null, ['url' => '/contact#enquiry']) ?>
+                        <?= $this->Form->create($contact ?? null, ['url' => '/contact#enquiry', 'id' => 'contact-form']) ?>
+                            <input type="hidden" name="g-recaptcha-response" value="">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="name">Full Name</label>

@@ -269,6 +269,17 @@ return [
     ],
 
     /*
+     * Google reCAPTCHA v3 for the contact form. Set siteKey and secretKey in
+     * app_local.php; verification is skipped while either is empty.
+     * Submissions scoring below minScore (0.0 = bot, 1.0 = human) are rejected.
+     */
+    'Recaptcha' => [
+        'siteKey' => '',
+        'secretKey' => '',
+        'minScore' => 0.5,
+    ],
+
+    /*
      * Connection information used by the ORM to connect
      * to your application's datastores.
      *

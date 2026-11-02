@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Form\ContactForm;
+use App\Service\Recaptcha;
 use Cake\Log\Log;
 use Throwable;
 
@@ -25,8 +26,24 @@ class ContactController extends AppController
                 return $this->redirect('/contact#enquiry');
             }
 
+            $data = $this->request->getData();
+            if (
+                Recaptcha::isEnabled()
+                && $contact->validate($data)
+                && !Recaptcha::verify(
+                    (string)$this->request->getData('g-recaptcha-response', ''),
+                    'contact',
+                    $this->request->clientIp()
+                )
+            ) {
+                $this->Flash->error('We could not verify your submission. Please try again, or call us or email visa@skyedgetravels.com.');
+                $this->set(compact('contact'));
+
+                return $this->render('/Pages/contact');
+            }
+
             try {
-                if ($contact->execute($this->request->getData())) {
+                if ($contact->execute($data)) {
                     $this->Flash->success('Thank you! Your enquiry has been sent. Our team will contact you shortly.');
 
                     return $this->redirect('/contact#enquiry');
