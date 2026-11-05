@@ -41,7 +41,7 @@ $this->assign('title', 'Sky Travel & Visa Services');
 
                 <div class="hero-stats">
                     <div class="stat-box">
-                        <strong>15+</strong>
+                        <strong>25+</strong>
                         <span>Years of experience</span>
                     </div>
                     <div class="stat-box">

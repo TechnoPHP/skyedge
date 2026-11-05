@@ -82,7 +82,7 @@ $this->assign('title', 'About Us');
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
                     <h2 class="section-title">Our strengths</h2>
-                    <p class="section-subtitle">We combine experience, responsiveness, and practical knowledge to deliver dependable support across travel and immigration services.</p>
+                    <p class="section-subtitle">We combine 25+ years of experience, responsiveness, and practical knowledge to deliver dependable support across travel and immigration services.</p>
                 </div>
             </div>
             <div class="row g-4">
